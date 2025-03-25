@@ -14,7 +14,7 @@ const projects = [
     title: "NC News",
     description:
       "I created this full-stack news site as part of the Northcoders JavaScript Software Development Bootcamp.",
-    image: "assets/nc-news.jpg",
+    image: "/public/nc-news.jpg",
     tags: [
       "React",
       "Express.js",
@@ -31,7 +31,7 @@ const projects = [
     title: "Game Swap",
     description:
       "A community-focused web app created by 4 other great developers and me! Find new games, wishlist them, and trade your old physical copies with others.",
-    image: "assets/game-swap.jpg",
+    image: "/public/game-swap.jpg",
     tags: ["React", "Firebase", "TailwindCSS", "TypeScript", "shadcn"],
     liveUrl: "https://game-swap-eurostars.vercel.app",
     githubUrl: "https://github.com/Smasheroonie/game-swap-fe",
@@ -102,7 +102,7 @@ export default function Projects() {
           <Card className="overflow-hidden">
             <div className="relative aspect-video overflow-hidden flex justify-center">
               <img
-                src={"assets/plus.svg"}
+                src={"/public/plus.svg"}
                 className="size-30 bg-white p-2 rounded-full"
               />
             </div>
