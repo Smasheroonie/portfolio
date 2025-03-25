@@ -52,13 +52,13 @@ export default function Projects() {
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 pt-12 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden justify-between">
-              <div className="relative aspect-video overflow-hidden">
+              {/* <div className="relative aspect-video overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="object-cover transition-all duration-300 hover:scale-105"
                 />
-              </div>
+              </div> */}
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
@@ -99,13 +99,13 @@ export default function Projects() {
               </CardFooter>
             </Card>
           ))}
-          <Card className="overflow-hidden">
-            <div className="relative aspect-video overflow-hidden flex justify-center">
+          <Card className="flex flex-col justify-center overflow-hidden">
+            {/* <div className="relative aspect-video overflow-hidden flex justify-center">
               <img
                 src={"/public/plus.svg"}
                 className="size-30 bg-white p-2 rounded-full"
               />
-            </div>
+            </div> */}
             <CardHeader>
               <CardTitle>More to come...</CardTitle>
               <CardDescription>
