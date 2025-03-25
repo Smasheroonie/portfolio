@@ -14,7 +14,7 @@ const projects = [
     title: "NC News",
     description:
       "I created this full-stack news site as part of the Northcoders JavaScript Software Development Bootcamp.",
-    image: "/public/nc-news.jpg",
+    image: "/nc-news.jpg",
     tags: [
       "React",
       "Express.js",
@@ -31,7 +31,7 @@ const projects = [
     title: "Game Swap",
     description:
       "A community-focused web app created by 4 other great developers and me! Find new games, wishlist them, and trade your old physical copies with others.",
-    image: "/public/game-swap.jpg",
+    image: "/game-swap.jpg",
     tags: ["React", "Firebase", "TailwindCSS", "TypeScript", "shadcn"],
     liveUrl: "https://game-swap-eurostars.vercel.app",
     githubUrl: "https://github.com/Smasheroonie/game-swap-fe",
@@ -52,13 +52,13 @@ export default function Projects() {
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 pt-12 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden justify-between">
-              {/* <div className="relative aspect-video overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="object-cover transition-all duration-300 hover:scale-105"
                 />
-              </div> */}
+              </div>
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
@@ -100,12 +100,12 @@ export default function Projects() {
             </Card>
           ))}
           <Card className="flex flex-col justify-center overflow-hidden">
-            {/* <div className="relative aspect-video overflow-hidden flex justify-center">
+            <div className="relative aspect-video overflow-hidden flex justify-center">
               <img
-                src={"/public/plus.svg"}
+                src={"/plus.svg"}
                 className="size-30 bg-white p-2 rounded-full"
               />
-            </div> */}
+            </div>
             <CardHeader>
               <CardTitle>More to come...</CardTitle>
               <CardDescription>
